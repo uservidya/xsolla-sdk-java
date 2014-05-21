@@ -10,7 +10,7 @@ matrix:
  include:
   - jdk: openjdk7
  
- exclude:
-   - jdk: oraclejdk8  
+ #exclude:
+  # - jdk: oraclejdk8  
    
   

@@ -3,11 +3,14 @@ script: cd sdk ; mvn test
 
 jdk:
   - oraclejdk7
-  - openjdk7
+  #- openjdk7
   - oraclejdk8
 
 matrix:
-  allow_failures:
-  # exclude:
-   - jdk: oraclejdk8
+ include:
+  - jdk: openjdk7
+ 
+ exclude:
+   - jdk: oraclejdk8  
+   
   
